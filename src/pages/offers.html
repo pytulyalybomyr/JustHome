@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>JustHome</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html"><img src="../assets/logo-green.svg" alt="logo"></a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#instruction">About</a></li>
+                    <li><select class="header__nav-select" id="services">
+                            <option value="">Offer</option>
+                            <option value="/">All</option>
+                        </select></li>
+                    <li><a href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <img src="../assets/phone.svg" alt="">
+                <a href="tel:+380984120860">+380 98 412 08 60</a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="filter_class">
+            <form id="search__form" method="get" class="filter_class__form">
+
+            </form>
+            <div class="filter_class__select">
+                <img src="../assets/main-content_slice.png" alt="">
+
+            </div>
+        </section>
+        <div class="cards">
+
+            <div class="cards__header">
+                <h1>Our Offers</h1>
+                <p>We have a wide range of offers to suit your needs.</p>
+            </div>
+
+            <div class="cards__container">
+
+            </div>
+
+            <div class="pagination"></div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__main-block">
+                <img src="../assets/footer__icon.svg" alt="">
+                <h1>Stay Up to Date</h1>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+                <form action="">
+                    <input type="text" placeholder="Your e-mail" required>
+                    <button type="submit" value="search">Send <img src="../assets/right-arrow-white.svg"
+                            alt="search"></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <h2>Copyright © 2024. JustHome</h2>
+            <img src="./assets/logo-white.svg" alt="">
+            <ul>
+                <li><img src="../assets/social/Facebook.svg" alt=""></li>
+                <li><img src="../assets/social/Instagram.svg" alt=""></li>
+                <li><img src="../assets/social/Linkedin.svg" alt=""></li>
+                <li><img src="../assets/social/Twitter.svg" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script type="module" src="../js/offers.js"></script>
+
+</html>

@@ -1,0 +1,12 @@
+<svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_2_1563" fill="white">
+<path d="M0.469727 0.970001H8.46973V4.97H0.469727V0.970001Z"/>
+</mask>
+<g clip-path="url(#paint0_diamond_2_1563_clip_path)" data-figma-skip-parse="true" mask="url(#path-1-inside-1_2_1563)"><g transform="matrix(0.004 0 0 0.004 4.46973 0.970001)"><rect x="0" y="0" width="2000" height="2000" fill="url(#paint0_diamond_2_1563)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="2000" height="2000" transform="scale(1 -1)" fill="url(#paint0_diamond_2_1563)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="2000" height="2000" transform="scale(-1 1)" fill="url(#paint0_diamond_2_1563)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="2000" height="2000" transform="scale(-1)" fill="url(#paint0_diamond_2_1563)" opacity="1" shape-rendering="crispEdges"/></g></g><path d="M0.469727 0.970001V-3.03H-3.53027V0.970001H0.469727ZM8.46973 0.970001H12.4697V-3.03H8.46973V0.970001ZM0.469727 4.97H8.46973V-3.03H0.469727V4.97ZM4.46973 0.970001V4.97H12.4697V0.970001H4.46973ZM4.46973 4.97V0.970001H-3.53027V4.97H4.46973Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.12156862765550613,&#34;g&#34;:0.29411765933036804,&#34;b&#34;:0.26274511218070984,&#34;a&#34;:1.0},&#34;position&#34;:0.99999988079071045},{&#34;color&#34;:{&#34;r&#34;:0.0,&#34;g&#34;:0.0,&#34;b&#34;:0.0,&#34;a&#34;:0.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:8.0,&#34;m01&#34;:0.0,&#34;m02&#34;:0.46972656250,&#34;m10&#34;:0.0,&#34;m11&#34;:8.0,&#34;m12&#34;:-3.0299987792968750},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}" mask="url(#path-1-inside-1_2_1563)"/>
+<defs>
+<clipPath id="paint0_diamond_2_1563_clip_path"><path d="M0.469727 0.970001V-3.03H-3.53027V0.970001H0.469727ZM8.46973 0.970001H12.4697V-3.03H8.46973V0.970001ZM0.469727 4.97H8.46973V-3.03H0.469727V4.97ZM4.46973 0.970001V4.97H12.4697V0.970001H4.46973ZM4.46973 4.97V0.970001H-3.53027V4.97H4.46973Z" mask="url(#path-1-inside-1_2_1563)"/></clipPath><linearGradient id="paint0_diamond_2_1563" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+<stop offset="1" stop-color="#1F4B43"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

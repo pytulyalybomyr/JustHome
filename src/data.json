@@ -1,0 +1,244 @@
+{
+    "apartments": [
+        {
+            "id": 1,
+            "city": "New York",
+            "country": "United States",
+            "price": 4500,
+            "currency": "USD",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "square_meters": 75,
+            "photos": [
+                "../assets/countries_v2/h31.png",
+                "https://example.com/nyc1_2.jpg"
+            ],
+            "filters": [
+                "city center",
+                "balcony",
+                "modern"
+            ],
+            "Featured": true,
+            "photo": "../assets/data/photo__id2.png",
+            "address": "42 Avenue O, Brooklyn",
+            "name": "Cozy Brooklyn Apartment",
+            "type": "Apartment"
+        },
+        {
+            "id": 2,
+            "city": "London",
+            "country": "United Kingdom",
+            "price": 3200,
+            "currency": "GBP",
+            "bedrooms": 1,
+            "bathrooms": 1,
+            "square_meters": 50,
+            "photos": [
+                "../assets/countries_v2/h32.png",
+                "https://example.com/london1_2.jpg"
+            ],
+            "filters": [
+                "near park",
+                "historic building",
+                "wood floors"
+            ],
+            "Featured": true,
+            "photo": "../assets/data/photo__id4.png",
+            "address": "10 Downing St, Westminster",
+            "name": "Historic Westminster Flat",
+            "type": "Flat"
+        },
+        {
+            "id": 3,
+            "city": "Tokyo",
+            "country": "Japan",
+            "price": 2800,
+            "currency": "JPY",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "square_meters": 60,
+            "photos": [
+                "../assets/countries_v2/h33.png",
+                "https://example.com/tokyo1_2.jpg"
+            ],
+            "filters": [
+                "high-rise",
+                "smart home",
+                "near subway"
+            ],
+            "Featured": true,
+            "photo": "../assets/data/photo__id1.png",
+            "address": "1-2-3 Shibuya, Tokyo",
+            "name": "Modern Shibuya Condo",
+            "type": "Condo"
+        },
+        {
+            "id": 4,
+            "city": "Paris",
+            "country": "France",
+            "price": 2900,
+            "currency": "EUR",
+            "bedrooms": 1,
+            "bathrooms": 1,
+            "square_meters": 45,
+            "photos": [
+                "../assets/countries_v2/h34.png",
+                "https://example.com/paris1_2.jpg"
+            ],
+            "filters": [
+                "Eiffel Tower view",
+                "classic interior",
+                "balcony"
+            ],
+            "Featured": true,
+            "photo": "../assets/data/photo__id2.png",
+            "address": "15 Rue de Rivoli, Paris",
+            "name": "Charming Parisian Loft",
+            "type": "Apartment"
+        },
+        {
+            "id": 5,
+            "city": "Berlin",
+            "country": "Germany",
+            "price": 1800,
+            "currency": "EUR",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "square_meters": 65,
+            "photos": [
+                "../assets/countries_v2/h35.png",
+                "https://example.com/berlin1_2.jpg"
+            ],
+            "filters": [
+                "loft",
+                "industrial design",
+                "large windows"
+            ],
+            "Featured": true,
+            "photo": "../assets/data/photo__id3.png",
+            "address": "23 Friedrichstraße, Berlin",
+            "name": "Trendy Berlin Loft",
+            "type": "Villa"
+        },
+        {
+            "id": 6,
+            "city": "Munchen",
+            "country": "Germany",
+            "price": 3800,
+            "currency": "EUR",
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "square_meters": 90,
+            "photos": [
+                "../assets/countries_v2/h31.png",
+                "https://example.com/sydney1_2.jpg"
+            ],
+            "filters": [
+                "ocean view",
+                "pool",
+                "modern"
+            ],
+            "Featured": false,
+            "photo": "../assets/data/photo__id4.png",
+            "address": "7 Karlstraße, Munich",
+            "name": "Luxury Munich Residence",
+            "type": "Villa"
+        },
+        {
+            "id": 7,
+            "city": "Paris",
+            "country": "France",
+            "price": 2500,
+            "currency": "EUR",
+            "bedrooms": 2,
+            "bathrooms": 2,
+            "square_meters": 70,
+            "photos": [
+                "../assets/countries_v2/h32.png",
+                "https://example.com/toronto1_2.jpg"
+            ],
+            "filters": [
+                "penthouse",
+                "gym",
+                "near university"
+            ],
+            "Featured": true,
+            "photo": "../assets/data/photo__id1.png",
+            "address": "31 Boulevard Haussmann, Paris",
+            "name": "Elegant Haussmann Apartment",
+            "type": "Apartment"
+        },
+        {
+            "id": 8,
+            "city": "Los Angeles",
+            "country": "United States",
+            "price": 5000,
+            "currency": "AED",
+            "bedrooms": 3,
+            "bathrooms": 3,
+            "square_meters": 110,
+            "photos": [
+                "../assets/countries_v2/h31.png",
+                "https://example.com/dubai1_2.jpg"
+            ],
+            "filters": [
+                "luxury",
+                "skyline view",
+                "swimming pool"
+            ],
+            "Featured": false,
+            "photo": "../assets/data/photo__id2.png",
+            "address": "45 Sunset Blvd, Los Angeles",
+            "name": "Luxury LA Apartment",
+            "type": "Apartment"
+        },
+        {
+            "id": 9,
+            "city": "Los Angeles",
+            "country": "United States",
+            "price": 5200,
+            "currency": "USD",
+            "bedrooms": 4,
+            "bathrooms": 3,
+            "square_meters": 120,
+            "photos": [
+                "../assets/countries_v2/h31.png",
+                "https://example.com/la1_2.jpg"
+            ],
+            "filters": [
+                "villa",
+                "garden",
+                "garage"
+            ],
+            "Featured": true,
+            "photo": "../assets/data/photo__id3.png",
+            "address": "123 Sunset Blvd, Los Angeles",
+            "name": "Luxury Sunset Villa",
+            "type": "Villa"
+        },
+        {
+            "id": 10,
+            "city": "Berlin",
+            "country": "Germany",
+            "price": 1500,
+            "currency": "EUR",
+            "bedrooms": 2,
+            "bathrooms": 1,
+            "square_meters": 70,
+            "photos": [
+                "../assets/countries_v2/h31.png",
+                "https://example.com/moscow1_2.jpg"
+            ],
+            "filters": [
+                "near metro",
+                "classic",
+                "fireplace"
+            ],
+            "Featured": false,
+            "photo": "../assets/data/photo__id4.png",
+            "address": "5 Unter den Linden, Berlin",
+            "name": "Historic Berlin Apartment",
+            "type": "Apartment"
+        }
+    ]
+}

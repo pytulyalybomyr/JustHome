@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+
+    <title>JustHome</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="header">
+            <a href="../index.html"><img src="../assets/logo-green.svg" alt="logo"></a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#instruction">About</a></li>
+                    <li><select class="header__nav-select" id="services">
+                            <option value="">Offer</option>
+                            <option value="/">All</option>
+                        </select></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <img src="../assets/phone.svg" alt="">
+                <a href="tel:+380984120860">+380 98 412 08 60</a>
+            </div>
+        </div>
+        <main>
+            <section class="contact">
+                <div class="contact__block">
+                    <div class="contact__block-content">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.18178866781!2d2.3787454762989833!3d48.89287257133697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dcd875c209f%3A0x263a7f80165e77b1!2zMTQwIEF2LiBkZSBGbGFuZHJlLCA3NTAxOSBQYXJpcywg0KTRgNCw0L3RhtC40Y8!5e0!3m2!1sru!2sua!4v1743866426913!5m2!1sru!2sua"
+                            width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <ul>
+                            <li>
+                                <img src="../assets/phone.svg" alt="phone">
+                                <a href="mailto:pytulyalybomyr@gmail.com">pytulyalybomyr@gmail.com</a>
+                            </li>
+                            <li>
+                                <img src="../assets/email.svg" alt="">
+                                <a href="tel:+380 98 4120860">+380 98 412 08 60</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="contact__form">
+                    <h1>Contact Us</h1>
+                    <form action="">
+                        <div class="contact__form-inp">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Max" required>
+                        </div>
+                        <div class="contact__form-inp">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="example@test.com" required>
+                        </div>
+                        <div class="contact__form-inp">
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone" placeholder="+7 801 322 43" required>
+                        </div>
+
+                        <div class="contact__form-inp">
+                            <label for="message">Message</label>
+                            <textarea name="message"
+                                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                                required></textarea>
+                        </div>
+
+
+                        <button type="submit">Send
+                            Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </header>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__main-block">
+                <img src="../assets/footer__icon.svg" alt="">
+                <h1>Stay Up to Date</h1>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+                <form action="">
+                    <input type="text" placeholder="Your e-mail" required>
+                    <button type="submit" value="search">Send <img src="../assets/right-arrow-white.svg"
+                            alt="search"></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <h2>Copyright © 2024. JustHome</h2>
+            <img src="./assets/logo-white.svg" alt="">
+            <ul>
+                <li><img src="../assets/social/Facebook.svg" alt=""></li>
+                <li><img src="../assets/social/Instagram.svg" alt=""></li>
+                <li><img src="../assets/social/Linkedin.svg" alt=""></li>
+                <li><img src="../assets/social/Twitter.svg" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script type="module" src="../js/offers.js"></script>
+
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.css">
+
+    <title>JustHome</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="/"><img src="../assets/logo-green.svg" alt="logo"></a>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#instruction">About</a></li>
+                    <li>
+                        <label for="offer"></label><select name="offer" class="header__nav-select" id="services">
+                            <option value="">Offer</option>
+                            <option value="./pages/offers.html">All</option>
+                        </select></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__contact">
+                <img src="./assets/phone.svg" alt="">
+                <a href="tel:+380984120860">+380 98 412 08 60</a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="content">
+            <div class="content__block">
+                <div class="content__block-text">
+                    <div class="content__block-button">LET US GUIDE YOUR HOME</div>
+                    <h3>We’ve more than 745,000 apartments, place & plot.</h3>
+                    <h1>Find Your Perfect Home</h1>
+                </div>
+
+                <form action="pages/offers.html" method="get" class="content__block-search">
+                    <input type="text" name="search" placeholder="Search for your home..." required>
+                    <button type="submit" value="search"><img src="./assets/search.svg" alt="search"></button>
+                </form>
+                <div class="content__block-buttons">
+                    <h2>Explore all things property</h2>
+                    <ul>
+                        <li><button>All Properties</button></li>
+                        <li><button>For Sale</button></li>
+                        <li><button>For Rent</button></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="sponsors">
+            <div class="sponsors__block">
+                <h3>Thousands of world’s leading companies trust Space</h3>
+                <div class="sponsors__block-logos" id="instruction">
+                    <img src="./assets/sponsors/Link → bw-1.png.png" alt="">
+                    <img src="./assets/sponsors/Link → bw-2.png.png" alt="">
+                    <img src="./assets/sponsors/Link → bw-3.png.png" alt="">
+                    <img src="./assets/sponsors/Link → bw-4.png.png" alt="">
+                    <img src="./assets/sponsors/Link → bw-5.png.png" alt="">
+                    <img src="./assets/sponsors/Link → bw-6.png.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="instruction">
+            <div class="instruction__block">
+                <div class="instruction__block-header">
+                    <h1>Find Your Dream House as Easy as 1,2,3</h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <article class="instruction__block-steps">
+                    <div class="instruction__block-step">
+                        <img src="./assets/instruction/h41.png.png" alt="">
+                        <h2>1. Search for you favorite house in </br>
+                            your location</h2>
+                        <p>Pellentesque egestas elementum egestas </br>
+                            faucibus sem.</p>
+                    </div>
+                    <div class="instruction__block-step">
+                        <img src="./assets/instruction/h42.png.png" alt="">
+                        <h2>2. Make a visit appointment with </br>
+                            one of your agents</h4>
+                            <p>Pellentesque egestas elementum egestas </br>
+                                faucibus sem.
+                        </h2>
+                    </div>
+                    <div class="instruction__block-step">
+                        <img src="./assets/instruction/h43.png.png" alt="">
+                        <h2>3. Get your dream house in a </br>
+                            month, or less</h2>
+                        <p>Pellentesque egestas elementum egestas </br>
+                            faucibus sem.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- <section class="counties">
+            <div class="counties__block">
+                <div class="counties__block-header">
+                    <h1>Featured Counties</h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="counties__block-slider"></div>
+            </div>
+        </section> -->
+
+        <section class="countries_v2">
+            <div class="countries_v2__block">
+                <div class="countries_v2__block-text">
+                    <h1>Looking for the new </br>
+                        home?</h1>
+                    <p>10 new offers every day. 350 offers on site, trusted by
+                        a community of thousands of users.</p>
+
+                    <button class="countries_v2__block-button"><a href="./pages/offers.html">Get Started <img
+                                src="./assets/right-arrow-white.svg" alt=""></a></button>
+                </div>
+                <div class="countries_v2__block-slider">
+
+                </div>
+            </div>
+        </section>
+        <section class="properties">
+            <div class="properties__block">
+                <div class="properties__block-header">
+                    <div class="instruction__block-header">
+                        <h1>Find Your Dream House as Easy as 1,2,3</h1>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+                <div class="properties__block-cards">
+
+                </div>
+
+                <button class="properties__block-button" id="load-more-button">
+                    <div id="button_prp">
+                        <div class="text">See more</div> <img src="./assets/right-arror.svg" alt="">
+                    </div>
+
+
+                </button>
+                <!-- <div class="properties__block-card">
+                    <img class="properties__block-card_MainImg" src="./assets/d13.png" alt="">
+                    <div class="properties__block-card_inform">
+                        <div class="properties__block-card_inform__adress">
+                            <h2>Villa Garden With Pool</h2>
+                            <div class="properties__block-card_inform__adress-location">
+                                <img src="./assets/mark.svg" alt="">
+                                <h3>6822 Bay Pkwy, Brooklyn</h3>
+                            </div>
+                        </div>
+                        <div class="properties__block-card_inform__buttons">
+                            <ul>
+                                <li>
+                                    <img src="./assets/room.svg" alt="">
+                                    <button>4</button>
+                                </li>
+                                <li>
+                                    <img src="./assets/bathroom.svg" alt="">
+                                    <button>1</button>
+                                </li>
+                                <li>
+
+                                    <img src="./assets/sqr.svg" alt="">
+                                    <button>560</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="properties__block-card_inform__price">
+                            <h2>$350<span>/month</span></h2>
+                            <button><img src="./assets/heart.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <section class="question">
+            <article class="question__block">
+                <div class="question__block-text">
+                    <h1>Looking for the new </br>
+                        home?</h1>
+                    <p>10 new offers every day. 350 offers on site, trusted by
+                        a community of thousands of users.</p>
+
+                    <button class="question__block-button"><a href="#contact">Get Started <img
+                                src="./assets/right-arrow-white.svg" alt=""></a></button>
+                </div>
+                <img src="./assets/question_id1.png" alt="">
+            </article>
+            <article class="question__block">
+                <div class="question__block-text">
+                    <h1>Want to sell your </br>
+                        home? </h1>
+                    <p>10 new offers every day. 350 offers on site, trusted by
+                        a community of thousands of users.</p>
+
+                    <button class="question__block-button"><a href="#contact">Get Started <img
+                                src="./assets/right-arrow-white.svg" alt=""></a></button>
+                </div>
+                <img src="./assets/question_id2.png" alt="">
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__main-block">
+                <img src="./assets/footer__icon.svg" alt="">
+                <h1>Stay Up to Date</h1>
+                <p>Subscribe to our newsletter to receive our weekly feed.</p>
+                <form action="">
+                    <input type="text" placeholder="Your e-mail" required>
+                    <button type="submit" value="search">Send <img src="./assets/right-arrow-white.svg"
+                            alt="search"></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <h2>Copyright © 2024. JustHome</h2>
+            <img src="./assets/logo-white.svg" alt="">
+            <ul>
+                <li><img src="./assets/social/Facebook.svg" alt=""></li>
+                <li><img src="./assets/social/Instagram.svg" alt=""></li>
+                <li><img src="./assets/social/Linkedin.svg" alt=""></li>
+                <li><img src="./assets/social/Twitter.svg" alt=""></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
+<!-- <script type="module" src="./js/slider__flat.js"></script> -->
+<script type="module" src="./js/house__featured.js"></script>
+<script type="module" src="./js/countries__slider.js"></script>
+<script></script>
+
+</html>
