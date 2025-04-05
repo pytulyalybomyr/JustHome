@@ -1,0 +1,32 @@
+{
+  "name": "capstone-project-template",
+  "version": "1.0.0",
+  "description": "To make it easy for you to get started with GitLab, here's a list of recommended next steps.",
+  "repository": {
+    "type": "git",
+    "url": "https://autocode.git.epam.com/pytulyalybomyr/capstone-project-template.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "sass --watch src/style/style.scss:./src/styles.css",
+    "start": "concurrently \"npm run compile\" \"live-server src\"",
+    "clean": "rmdir /s /q dist && mkdir dist",
+    "copy": "copyfiles -u 1 src/index.html src/js/**/* src/pages/**/* src/data.json src/style.css src/scripts/main.js src/assets/**/*  dist",
+    "build": "npm run clean && npm run copy"
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2",
+    "live-server": "^1.2.2",
+    "sass": "^1.86.0",
+    "swiper": "^11.2.6"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cpx": "^1.5.0",
+    "rimraf": "^6.0.1"
+  }
+}
