@@ -42,7 +42,12 @@ fetch("../data.json")
         updateElementCount();
 
         // Оновлюємо при зміні розміру вікна
-        window.addEventListener("resize", updateElementCount);
+        window.addEventListener("resize", () => {
+            updateElementCount()
+        });
+
+
+        // window.addEventListener("resize", updateElementCount);
         let currentIndex = 0;
 
         const cardsContainer = document.querySelector(".properties__block-cards");
