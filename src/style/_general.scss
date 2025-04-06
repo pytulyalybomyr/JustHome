@@ -20,10 +20,21 @@ button {
     outline: none;
 
     cursor: pointer;
+    color: #1a1a1a;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 html {
