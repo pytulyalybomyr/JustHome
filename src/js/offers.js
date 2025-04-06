@@ -1,6 +1,14 @@
 fetch("../data.json")
     .then((response) => response.json())
     .then((data) => {
+        let PageCount;
+
+        updateElementCount(); // тепер він буде змінювати правильну змінну
+
+        window.addEventListener("resize", () => {
+            updateElementCount();
+        });
+
         let countsType = {};
         let countsCity = {};
 
@@ -28,7 +36,7 @@ fetch("../data.json")
             return `<option value="${city}" ${CityValue() === city ? "selected" : ""}>${city}</option>`;
         }).join('')}
 </select>
-
+            
             <input type="number" placeholder="Min Price" name="min" id="min" value="${MinValue()}" class="filter_class__input">
             <input type="number" placeholder="Max Price" name="max" id="max" value="${MaxValue()}" class="filter_class__input">
             </div>
@@ -53,8 +61,6 @@ fetch("../data.json")
                 window.location.href = selectedURL;
             }
         });
-
-
 
 
         let filter_class__form = document.querySelector(".filter_class__select");
@@ -97,7 +103,7 @@ fetch("../data.json")
             return parseInt(params.get("page") || 1);
         }
 
-        function renderPagination(totalItems, currentPage, perPage = 8) {
+        function renderPagination(totalItems, currentPage, perPage = PageCount) {
             const totalPages = Math.ceil(totalItems / perPage);
             const paginationContainer = document.querySelector(".pagination");
             paginationContainer.innerHTML = "";
@@ -187,8 +193,18 @@ fetch("../data.json")
             return items.slice(start, start + perPage);
         }
 
+        function updateElementCount() {
+            if (window.innerWidth <= 768) {
+                PageCount = 4;
+            } else if (window.innerWidth <= 1100) {
+                PageCount = 6;
+            } else {
+                PageCount = 6;
+            }
+        }
+
         const filtered = filterSearch(data.apartments, SearchValue().toLowerCase(), TypeValue(), CityValue(), MinValue(), MaxValue());
-        const paginated = paginate(filtered, PageValue(), 8);
+        const paginated = paginate(filtered, PageValue(), PageCount);
 
         InnerElements(paginated);
         renderPagination(filtered.length, PageValue());

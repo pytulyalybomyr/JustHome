@@ -204,7 +204,7 @@ $gr: #1F4B43;
                 border-radius: 50%;
                 border: none;
                 background: #E7C873;
-                margin-right: 6px;
+                margin-right: 10px;
                 cursor: pointer;
             }
         }
@@ -833,6 +833,8 @@ $gr: #1F4B43;
 
 // QUESTION
 
+
+
 .question {
     display: flex;
     align-items: center;
@@ -909,14 +911,16 @@ $gr: #1F4B43;
         flex-direction: row-reverse;
         align-items: center;
         padding: 0 60px;
-        gap: 30px;
-
+        gap: 52px;
         margin-top: 80px;
 
-        // img {
-        //     width: 600px;
-        //     height: 325px;
-        // }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
     }
 
     &__form {
@@ -927,26 +931,16 @@ $gr: #1F4B43;
 
         input,
         select {
+            min-width: 90px;
             display: flex;
             padding: 0 20px;
-
             border: 1px solid #E9E9E9;
             outline: none;
-
             border-radius: 30px;
-            // padding: 12px 20px;
             width: 100px;
-            height: 50px;
-
-
-
-
-            // padding-right: 30px; // щоб не наїжджало на текст
-
-            // padding: 15px 20px;
-
+            height: 40px;
             font-size: 12px;
-            color: $gr;
+            color: #1F4B43;
 
             &:focus {
                 outline: none;
@@ -1001,7 +995,7 @@ $gr: #1F4B43;
     &__container {
         display: grid;
         align-items: flex-start;
-        grid-template-columns: repeat(4, 324px);
+        grid-template-columns: repeat(3, 324px);
 
         gap: 30px;
 
@@ -1068,43 +1062,50 @@ $gr: #1F4B43;
     justify-content: center;
     gap: 20px;
     padding: 0 60px;
-
     margin-top: 60px;
 
-    &__block {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 40px;
+    }
+
+    &__block,
+    &__form {
         width: 50%;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+
+    &__block {
         display: flex;
         align-items: center;
-        flex-direction: column;
         justify-content: center;
-        margin: 0 auto;
 
         &-content {
             display: flex;
             flex-direction: column;
             gap: 40px;
+            width: 95%;
+
+            iframe {
+                width: 100%;
+                height: 300px;
+                max-width: 100%;
+                height: 300px;
+            }
 
             ul {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
 
-
                 li {
                     display: flex;
                     align-items: center;
-                    justify-content: flex-start;
                     gap: 7px;
-
-
-
-
-
-                    a {
-                        font-size: 16px;
-                        font-weight: 400;
-                        color: $gr;
-                    }
 
                     img {
                         width: 37px;
@@ -1113,19 +1114,22 @@ $gr: #1F4B43;
                         border: 1px solid #E9E9E9;
                         padding: 7px;
                     }
+
+                    a {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: $gr;
+                    }
                 }
             }
         }
-
     }
-
 
     &__form {
         h1 {
             font-size: 30px;
             font-weight: 400;
             color: #1a1a1a;
-
             margin-bottom: 30px;
         }
 
@@ -1133,75 +1137,34 @@ $gr: #1F4B43;
             display: flex;
             flex-direction: column;
             gap: 20px;
-
-
         }
 
         &-inp {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
             gap: 5px;
 
             label {
                 padding-left: 10px;
-
                 font-size: 14px;
                 font-weight: 500;
                 color: $gr;
             }
-        }
 
-        width: 50%;
-        gap: 25px;
-
-        textarea {
-            font-size: 12px;
-            color: $gr;
-            border: 1px solid #E9E9E9;
-            outline: none;
-            border-radius: 30px;
-
-
-            min-height: 150px;
-            min-width: 100%;
-            max-width: 100%;
-            width: 100%;
-            display: flex;
-            padding: 20px 20px;
-        }
-
-        input {
-            display: flex;
-            padding: 0 20px;
-
-            border: 1px solid #E9E9E9;
-            outline: none;
-
-            border-radius: 30px;
-            // padding: 12px 20px;
-            width: 100px;
-            height: 50px;
-
-
-
-
-            // padding-right: 30px; // щоб не наїжджало на текст
-
-            // padding: 15px 20px;
-
-            font-size: 12px;
-            color: $gr;
-
-            &:focus {
-                outline: none;
+            input,
+            textarea {
+                font-size: 12px;
+                color: $gr;
+                border: 1px solid #E9E9E9;
+                border-radius: 30px;
+                padding: 15px 20px;
+                width: 100%;
             }
 
-
-        }
-
-        input {
-            width: 100%;
+            textarea {
+                min-height: 150px;
+                resize: vertical;
+            }
         }
 
         button {
@@ -1210,37 +1173,14 @@ $gr: #1F4B43;
             background: $gr;
             border-radius: 30px;
             border: none;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
             font-size: 14px;
             font-weight: 500;
             color: #fff;
-
-
-        }
-
-        select {
-            appearance: none; // прибирає стандартну стрілку
-            -webkit-appearance: none;
-            -moz-appearance: none;
-
-            background-image: url('../assets/header__after.svg'); // свою стрілочку
-            background-repeat: no-repeat;
-            background-position: right 10px center; // зміщення стрілки
-            background-size: 10px;
-        }
-
-        &-filter {
             display: flex;
-            align-items: stretch;
-
-            gap: 10px;
+            align-items: center;
+            justify-content: center;
         }
     }
-
 }
 
 
@@ -1365,7 +1305,6 @@ $gr: #1F4B43;
 // MEDIA QUERIES
 
 
-
 @media screen and (max-width: 1200px) {
     .instruction__block-step p {
         font-size: 12px;
@@ -1384,23 +1323,42 @@ $gr: #1F4B43;
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .cards {
+        &__container {
+            grid-template-columns: repeat(2, 324px);
+        }
+    }
+}
+
 @media screen and (max-width: 920px) {
+    .header {
+        padding: 25px 60px;
+        margin-bottom: 50px;
+    }
+
+    .header select {
+        font-size: 17px;
+    }
+
+
 
     .header__nav {
         position: relative;
-    }
 
-    .header__nav ul {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        gap: 40px;
-        position: absolute;
-        left: -50%;
-        top: -50%;
-        transform: translate(-50%, 73%);
-        border-top: 1px solid #1F4B43;
-        padding-top: 16px;
+        ul {
+            position: absolute;
+            top: 100%;
+            transform: translate(-48%, 91%);
+            left: 0;
+            width: 104vh;
+            /* background-color: white; */
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding-top: 17px;
+            border-top: 1px solid #1f4b435b;
+        }
     }
 
     header {
@@ -1464,6 +1422,23 @@ $gr: #1F4B43;
 
 
 @media screen and (max-width: 768px) {
+    .contact {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 30px;
+        margin-top: 60px;
+    }
+
+
+    .cards {
+        &__container {
+            grid-template-columns: repeat(1, 324px);
+            gap: 50px;
+        }
+    }
 
 
     .instruction__block-step h2 {
@@ -1518,6 +1493,16 @@ $gr: #1F4B43;
 @media screen and (max-width: 720px) {}
 
 @media screen and (max-width: 650px) {
+
+    .filter_class__form input,
+    .filter_class__form select {
+        width: 115px;
+    }
+
+    #search {
+        width: 100% !important;
+    }
+
     .content__block-buttons ul li button {
         border: 1px solid #363636;
     }
@@ -1757,5 +1742,107 @@ $gr: #1F4B43;
         align-items: center;
         justify-content: center;
         gap: 21px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .filter_class__select img {
+        width: 53%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .filter_class {
+        &__select {
+            padding: 0 40px;
+            gap: 30px;
+        }
+
+        &__form {
+            width: 60%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .filter_class {
+        &__select {
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 20px;
+
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+
+        &__form {
+            width: 80%;
+
+            &-filter {
+                gap: 10px;
+            }
+
+            input,
+            select {
+                width: 100%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact__block-content iframe {
+        width: 100%;
+        height: 200px;
+        max-width: 100%;
+        /* height: 300px; */
+    }
+
+}
+
+@media (max-width: 600px) {
+    .contact__block-content ul li a {
+        font-size: 14px;
+    }
+
+    .contact__block-content ul li img {
+        width: 29px;
+        height: 27px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+// .filter_class {
+//     &__form {
+//         width: 100%;
+//         gap: 10px;
+
+//         &-filter {
+//             flex-direction: column;
+//         }
+//     }
+
+//     &__select {
+//         gap: 10px;
+
+//         img {
+//             width: 100%;
+//         }
+//     }
+// }
+
+
+@media screen and (max-width: 535px) {
+    .filter_class__form-filter {
+        flex-wrap: wrap;
     }
 }

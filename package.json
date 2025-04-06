@@ -16,7 +16,9 @@
     "start": "concurrently \"npm run compile\" \"live-server src\"",
     "clean": "rmdir /s /q dist && mkdir dist",
     "copy": "copyfiles -u 1 src/index.html src/js/**/* src/pages/**/* src/data.json src/style.css src/scripts/main.js src/assets/**/*  dist",
-    "build": "npm run clean && npm run copy"
+    "build": "npm run clean && npm run copy",
+    "lint": "eslint . --ext .js",
+    "lint:css": "stylelint '**/*.scss' --fix"
   },
   "dependencies": {
     "concurrently": "^9.1.2",
@@ -27,6 +29,10 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "cpx": "^1.5.0",
-    "rimraf": "^6.0.1"
+    "eslint": "^9.24.0",
+    "rimraf": "^6.0.1",
+    "stylelint": "^16.18.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-scss": "^6.11.1"
   }
 }
