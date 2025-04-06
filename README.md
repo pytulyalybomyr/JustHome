@@ -59,10 +59,9 @@ Before running the project, ensure you have the following installed on your syst
    
 The project will be available in your browser at http://localhost:3000.
 
-Project Structure
-bash
-Копіювати
-Редагувати
+### Project Structure
+
+```bash
 /src
   /assets        # Images and other static assets
   /css           # Compiled CSS files
@@ -73,14 +72,15 @@ bash
   /README.md     # This file
   /package.json  # Project dependencies and scripts
   /eslint.config.js # ESLint configuration
-Scripts
+
+### Scripts
 npm run compile: Compiles all .scss files into .css files.
 
 npm start: Starts the development server.
 
 npm run lint: Lints the JavaScript and Sass files using ESLint and Stylelint.
 
-Linters
+### Linters
 This project uses the following linters to maintain code quality:
 
 ESLint for JavaScript
