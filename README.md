@@ -61,17 +61,18 @@ The project will be available in your browser at http://localhost:3000.
 
 ### Project Structure
 
-```bash
-/src
-  /assets        # Images and other static assets
-  /css           # Compiled CSS files
-  /js            # JavaScript files
-  /data          # Local JSON data
-  /scss          # Sass source files
-  /index.html    # Main HTML file
-  /README.md     # This file
-  /package.json  # Project dependencies and scripts
-  /eslint.config.js # ESLint configuration
+   ```bash
+   /src
+     /assets        # Images and other static assets
+     /css           # Compiled CSS files
+     /js            # JavaScript files
+     /data          # Local JSON data
+     /scss          # Sass source files
+     /index.html    # Main HTML file
+     /README.md     # This file
+     /package.json  # Project dependencies and scripts
+     /eslint.config.js # ESLint configuration
+
 
 ### Scripts
 npm run compile: Compiles all .scss files into .css files.
