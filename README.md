@@ -36,30 +36,27 @@ Before running the project, ensure you have the following installed on your syst
 
    ```bash
    git clone <repository-link>
-Navigate into the project folder:
 
-bash
-Копіювати
-Редагувати
-cd <project-folder>
-Install dependencies:
+2. Navigate into the project folder
 
-bash
-Копіювати
-Редагувати
-npm install
-Compile Sass into CSS:
+   ```bash
+   cd <project-folder>
 
-bash
-Копіювати
-Редагувати
-npm run compile
-Start the project:
+3. Install dependencies:
 
-bash
-Копіювати
-Редагувати
-npm start
+   ```bash
+   npm install
+
+4. Compile Sass into CSS:
+
+   ```bash
+   npm run compile
+
+5. Start the project:
+
+   ```bash
+   npm run start
+   
 The project will be available in your browser at http://localhost:3000.
 
 Project Structure
